@@ -21,7 +21,7 @@ namespace arrayFunction
             };
             // setup of an existing method
             Dictionary<string, Func<int, int>> MyDict = new Dictionary<string, Func<int, int>> { // In my sample i use Func delegate not Action
-              ["key"] = FunctionExample(); // Warning! The functions arguments must be converges with types in delegate! Func<arguments_type, return_type>
+              ["key"] = FunctionExample; // Warning! The functions arguments must be converges with types in delegate! Func<arguments_type, return_type>
             };            
         }
     }
