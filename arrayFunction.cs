@@ -20,7 +20,7 @@ namespace arrayFunction
               ["key"] = (int arg1) => { return arg1 + 5; } // Using anonymous function for setup key function
             };
             // setup of an existing method
-            Dictionary<string, Func<int, int>> MyDict = new Dictionary<string, Func<int, int>> { // In my sample i use Func delegate not Action
+            Dictionary<string, Func<string, string, string>> MyDict = new Dictionary<string, Func<string, string, string>> { // In my sample i use Func delegate not Action
               ["key"] = FunctionExample; // Warning! The functions arguments must be converges with types in delegate! Func<arguments_type, return_type>
             };            
         }
